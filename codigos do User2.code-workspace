@@ -1,0 +1,25 @@
+{
+    "folders": [
+        {
+            "path": "App"
+        },
+        {
+            "path": "../../../../Documentos/codigos do User2"
+        },
+        {
+            "path": "../../../../Documentos/documentos-code"
+        },
+        {
+            "path": "../../../../Documentos/Python"
+        },
+        {
+            "path": "../../../../Documentos/Python/teste de python em html"
+        },
+        {
+            "path": "../../../../Área de Trabalho/JavaScritp calculadora"
+        }
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "App"
+    }
+}
