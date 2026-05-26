@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Mundo Digital</title>
+    <link rel="stylesheet" href="porti.css">
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Meu Universo</h1>
+        <p>Central de Projetos e Identidade</p>
+    </header>
+
+    <main class="container">
+        <div class="card">
+            <h3>Desenvolvimento Web</h3>
+            <p>Plataformas interativas e sistemas de gestão.</p>
+            <a href="#" class="btn">Ver Projeto</a>
+        </div>
+
+        <div class="card">
+            <h3>Game Design</h3>
+            <p>Criação de mundos e simulações físicas.</p>
+            <a href="#" class="btn">Ver Projeto</a>
+        </div>
+        <div class="card">
+            <h3>Design Gráfico</h3>
+            <p>Identidade visual e branding.</p>
+            <a href="#" class="btn">Ver Projeto</a>
+    </main>
+            <h1>flass card sobre meus protifolio</h1>
+            <p class="hint">Clique na carta para vê-la de frente.</p>
+        <div class="card-container" onclick="this.querySelector('.card').classList.toggle('flipped')">
+            <div class="card">
+                <div class="card-face card-front">
+                    <h2>Desenvolvimento Web</h2>
+                    <p>Plataformas interativas e sistemas de gestão.</p>
+                </div>
+                <div class="card-face card-back">
+                    <h2>Detalhes do Projeto</h2>
+                    <p>Este projeto envolve a criação de um sistema de gestão para uma empresa de médio porte, utilizando tecnologias modernas como React e Node.js.</p>
+                </div>
+            <div class="progress" id="progress">card 1 de 8</div>
+            <div class="controls">
+            <button onclick="prevCard()">Anterior</button>
+            <button onclick="nextCard()">Próximo</button>
+        </div>
+</body>
+</html>

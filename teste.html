@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>  
+        .card-container {
+            perspective: 1000px;
+            width: 400px;
+            height: 250px;
+            cursor: pointer;
+        }
+        .card {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 15px;
+        }
+        .card.flipped {
+            transform: rotateY(180deg);
+        }
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border-radius: 15px;
+            font-size: 1.2rem;
+            font-weight: 500;
+        }
+        .card-front {
+            background-color: #ffffff;
+            color: #1a3a6b;
+            border: 2px solid #1a3a6b;
+        }
+        .card-back {
+            background-color: #1a3a6b;
+            color: #ffffff;
+            transform: rotateY(180deg);
+        }
+        .controls {
+            margin-top: 30px;
+            display: flex;
+            gap: 20px;
+        }
+        </style>
+    <h1>Meu Mundo Digital</h1>
+
+    <div class="card-container" onclick="this.querySelector('.card').classList.toggle('flipped')">
+        <div class="card">
+            <div class="card-face card-front">
+                <h2>Desenvolvimento Web</h2>
+                <p>Plataformas interativas e sistemas de gestão.</p>
+            </div>
+            <div class="card-face card-back">
+                <h2>Detalhes do Projeto</h2>
+                <p>Este projeto envolve a criação de um sistema de gestão para uma empresa fictícia, utilizando tecnologias modernas como React e Node.js.</p>
+            </div>
+</body>
+</html>
